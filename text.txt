@@ -1,0 +1,2 @@
+git@github.com:PriyaRRajbhar/Music-Website.git
+git remote add origin https://github.com/PriyaRRajbhar/Music-Website.git
