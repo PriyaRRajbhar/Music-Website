@@ -1,5 +1,6 @@
-import React from 'react'
-import logo from '../assets/LOGOdark.svg'
+import React from 'react';
+import logo from '../assets/LOGOdark.svg';
+import { Search, Moon, User } from "lucide-react";
 
 function Navbar() {
   return (
@@ -8,13 +9,17 @@ function Navbar() {
             <img src={logo} alt='TUNENEST' className='w-34 h-34'/>
         </div>
 
-        <div className='border border-white rounded-full w-150 h-8'>
-            <input type="text" />
-            <button></button>
+        <div className='border border-white rounded-full w-150 h-8 px-3 flex justify-between items-center gap-2'>
+            <input type="text" placeholder='Search Song Here' />
+
+            <div>
+            <button aria-label="Search" className=''><Search size={15} /></button>
+            </div>
         </div>
 
-        <div>
-            icons
+        <div className='flex border-indigo-500 mr-4 justify-center items-center gap-4'>
+            <button aria-label="Toggle theme"><Moon size={20} /></button>
+            <button aria-label="Profile"><User size={22} /></button>
         </div>
     </nav>
   )
